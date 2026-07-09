@@ -15,7 +15,7 @@ RUN apt update && apt install -y \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN cd /lib/systemd/system/sysinit.target.wants/ ; \
-    ls | grep -v systemd-tmpfiles-setup | xargs rm -f $1 ; \
+    ls | grep -v systemd-tmpfiles-setup | xargs rm -f ; \
     rm -f /lib/systemd/system/multi-user.target.wants/* ;\
     rm -f /etc/systemd/system/*.wants/* ;\
     rm -f /lib/systemd/system/local-fs.target.wants/* ; \

@@ -6,29 +6,15 @@ This repository contains a fully auditable build pipeline that pushes x86 and AR
 
 ## Usage
 
+Each tag is a multi-arch manifest, so the same command pulls the right image for `linux/amd64` and `linux/arm64` automatically.
+
 ### Ubuntu 24.04 LTS (Noble) with Systemd
-
-linux/amd64
-
-```
-docker pull ghcr.io/davift/systemd:ubuntu-24
-```
-
-linux/arm64
 
 ```
 docker pull ghcr.io/davift/systemd:ubuntu-24
 ```
 
 ### Debian 13 (Trixie) with Systemd
-
-linux/amd64
-
-```
-docker pull ghcr.io/davift/systemd:debian-13
-```
-
-linux/arm64
 
 ```
 docker pull ghcr.io/davift/systemd:debian-13
